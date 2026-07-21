@@ -1,0 +1,41 @@
+.close-btn[data-v-c1111ded] {
+	cursor: pointer;
+	height: 1rem;
+	position: absolute;
+	right: 1rem;
+	top: 14px;
+	width: 1rem;
+	z-index: 9999;
+}
+@media screen and (min-width: 640px) {
+	.close-btn[data-v-c1111ded] {
+		height: 1rem;
+		width: 1rem;
+	}
+}
+.close-btn[data-v-c1111ded] {
+	transform: translate(4px, -4px);
+}
+.close-btn[data-v-c1111ded]:after,
+.close-btn[data-v-c1111ded]:before {
+	content: "";
+	display: block;
+	height: 2px;
+	left: 0;
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	--tw-bg-opacity: 1;
+	background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+	transform: translateY(-50%) rotate(45deg);
+}
+.close-btn[data-v-c1111ded]:after {
+	transform: translateY(-50%) rotate(-45deg);
+}
+.close-btn[data-v-c1111ded]:focus:after,
+.close-btn[data-v-c1111ded]:focus:before,
+.close-btn[data-v-c1111ded]:hover:after,
+.close-btn[data-v-c1111ded]:hover:before {
+	--tw-bg-opacity: 1;
+	background-color: rgb(128 125 115 / var(--tw-bg-opacity, 1));
+}
