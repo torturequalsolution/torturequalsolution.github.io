@@ -1,0 +1,22 @@
+{
+  "name": "torturequalsolution.github.io",
+  "version": "1.0.0",
+  "description": "the github pages hosted website to torture equals solution",
+  "scripts": {
+    "test": "echo \"error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/torturequalsolution/torturequalsolution.github.io.git"
+  },
+  "keywords": [],
+  "author": "cavassani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/torturequalsolution/torturequalsolution.github.io/issues"
+  },
+  "homepage": "https://github.com/torturequalsolution/torturequalsolution.github.io#readme",
+  "dependencies": {
+    "editorconfig": "^3.0.2"
+  }
+}
