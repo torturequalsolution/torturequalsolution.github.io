@@ -1,3 +1,389 @@
-* {
-    font-family: Arial, Helvetica, sans-serif
+*, ::backdrop, :after, :before {
+	--tw-border-spacing-x: 0;
+	--tw-border-spacing-y: 0;
+
+	--tw-translate-x: 0;
+	--tw-translate-y: 0;
+
+	--tw-rotate: 0;
+
+	--tw-skew-x: 0;
+	--tw-skew-y: 0;
+
+	--tw-scale-x: 1;
+	--tw-scale-y: 1;
+
+	--tw-pan-x: ;
+	--tw-pan-y: ;
+
+	--tw-pinch-zoom: ;
+
+	--tw-scroll-snap-strictness: proximity;
+
+	--tw-gradient-from-position: ;
+	--tw-gradient-via-position: ;
+	--tw-gradient-to-position: ;
+
+	--tw-ordinal: ;
+	--tw-slashed-zero: ;
+
+	--tw-numeric-figure: ;
+	--tw-numeric-spacing: ;
+	--tw-numeric-fraction: ;
+
+	--tw-ring-inset: ;
+
+	--tw-ring-offset-width: 0px;
+	--tw-ring-offset-color: #fff;
+
+	--tw-ring-color: #3b82f680;
+	--tw-ring-offset-shadow: 0 0 #0000;
+	--tw-ring-shadow: 0 0 #0000;
+	--tw-shadow: 0 0 #0000;
+	--tw-shadow-colored: 0 0 #0000;
+
+	--tw-blur: ;
+	--tw-brightness: ;
+	--tw-contrast: ;
+	--tw-grayscale: ;
+	--tw-hue-rotate: ;
+	--tw-invert: ;
+	--tw-saturate: ;
+	--tw-sepia: ;
+	--tw-drop-shadow: ;
+
+	--tw-backdrop-blur: ;
+	--tw-backdrop-brightness: ;
+	--tw-backdrop-contrast: ;
+	--tw-backdrop-grayscale: ;
+	--tw-backdrop-hue-rotate: ;
+	--tw-backdrop-invert: ;
+	--tw-backdrop-opacity: ;
+	--tw-backdrop-saturate: ;
+	--tw-backdrop-sepia: ;
+
+	--tw-contain-size: ;
+	--tw-contain-layout: ;
+	--tw-contain-paint: ;
+	--tw-contain-style: ;
 }
+
+*, :after, :before {
+	border: 0 solid #e5e7eb;
+	box-sizing: border-box;
+}
+
+:after, :before {
+	--tw-content: "";
+}
+
+:host, html {
+	line-height: 1.5;
+
+	-webkit-text-size-adjust: 100%;
+
+	font-family: HelveticaNeueLTStd-BdCn-BdCn, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Arial;
+	font-feature-settings: normal;
+	font-variation-settings: normal;
+
+	tab-size: 4;
+
+	-webkit-tap-highlight-color: transparent;
+}
+
+body {
+	line-height: inherit;
+
+	margin: 0;
+}
+
+hr {
+	border-top-width: 1px;
+
+	color: inherit;
+
+	height: 0;
+}
+
+abbr:where([title]) {
+	-webkit-text-decoration: underline dotted;
+	text-decoration: underline dotted;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+a {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+b, strong {
+	font-weight: bolder;
+}
+
+code, kbd, pre, samp {
+	font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+	font-feature-settings: normal;
+	font-size: 1em;
+	font-variation-settings: normal;
+}
+
+small {
+	font-size: 80%;
+}
+
+sub, sup {
+	font-size: 75%;
+
+	line-height: 0;
+
+	position: relative;
+
+	vertical-align: initial;
+}
+
+sub {
+	bottom: -.25em;
+}
+
+sup {
+	top: -.5em;
+}
+
+table {
+	border-collapse: collapse;
+	border-color: inherit;
+
+	text-indent: 0;
+}
+
+button, input, optgroup, select, textarea {
+	color: inherit;
+
+	font-family: inherit;
+	font-feature-settings: inherit;
+	font-size: 100%;
+	font-variation-settings: inherit;
+	font-weight: inherit;
+
+	letter-spacing: inherit;
+	line-height: inherit;
+
+	margin: 0;
+	padding: 0;
+}
+
+button, select {
+	text-transform: none;
+}
+
+button,
+input:where([type=button]),
+input:where([type=reset]),
+input:where([type=submit]) {
+	-webkit-appearance: button;
+
+	background-color: initial;
+	background-image: none;
+}
+
+:-moz-focusring {
+	outline: auto;
+}
+
+:-moz-ui-invalid {
+	box-shadow: none;
+}
+
+progress {
+	vertical-align: initial;
+}
+
+::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+	height: auto;
+}
+
+[type=search] {
+	-webkit-appearance: textfield;
+
+	outline-offset: -2px;
+}
+
+::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+	-webkit-appearance: button;
+
+	font: inherit;
+}
+
+summary {
+	display: list-item;
+}
+
+blockquote, dd, dl, figure,
+h1, h2, h3, h4, h5, h6, hr, p, pre {
+	margin: 0;
+}
+
+fieldset {
+	margin: 0;
+}
+
+fieldset, legend {
+	margin: 0;
+}
+
+menu, ol, ul {
+	list-style: none;
+
+	margin: 0;
+	padding: 0;
+}
+
+dialog {
+	padding: 0;
+}
+
+textarea {
+	resize: vertical;
+}
+
+input::placeholder, textarea::placeholder {
+	color: #9ca3af;
+
+	opacity: 1;
+}
+
+[role=button], button {
+	cursor: pointer;
+}
+
+:disabled {
+	cursor: default;
+}
+
+audio, canvas, embed, iframe, img, object, svg, video {
+	display: block;
+
+	vertical-align: middle;
+}
+
+img, video {
+	height: auto;
+
+	max-width: 100%;
+}
+
+[hidden]:where(:not([hidden=until-found])) {
+	display: none;
+}
+
+.container {
+	width: 100%;
+}
+
+@media (min-width: 375px) {
+	.container {
+		max-width: 375px;
+	}
+}
+
+@media (min-width: 640px) {
+	.container {
+		max-width: 640px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.container {
+		max-width: 1024px;
+	}
+}
+
+@media (min-width: 1441px) {
+	.container {
+		max-width: 1441px;
+	}
+}
+
+@media (min-width: 1536px) {
+	.container {
+		max-width: 1536px;
+	}
+}
+
+.sr-only {
+	height: 1px;
+	margin: -1px;
+
+	overflow: hidden;
+
+	padding: 0;
+
+	position: absolute;
+
+	width: 1px;
+
+	clip: rect(0, 0, 0, 0);
+
+	border-width: 0;
+
+	white-space: nowrap;
+}
+
+.pointer-events-none {
+	pointer-events: none;
+}
+
+.visible {
+	visibility: visible;
+}
+
+.collapse {
+	visibility: collapse;
+}
+
+.static {
+	position: static;
+}
+
+.fixed {
+	position: fixed;
+}
+
+.absolute {
+	position: absolute;
+}
+
+.relative {
+	position: relative;
+}
+
+.sticky {
+	position: sticky;
+}
+
+.inset-x-0 {
+	left: 0;
+	right: 0;
+}
+
+.-bottom-1 {
+	bottom: -.25rem;
+}
+
+.-bottom-6{bottom:-1.5rem}.-right-1{right:-.25rem}.-right-4{right:-1rem}.-top-1{top:-.25rem}.-top-8{top:-2rem}.-top-\[1px\]{top:-1px}.-top-\[2px\]{top:-2px}.bottom-0{bottom:0}.bottom-10{bottom:2.5rem}.bottom-4{bottom:1rem}.bottom-6{bottom:1.5rem}.bottom-8{bottom:2rem}
+
+.left-0{left:0}.left-3{left:.75rem}.left-4{left:1rem}.left-auto{left:auto}
+
+.right-0{right:0}.right-2{right:.5rem}.right-4{right:1rem}.right-8{right:2rem}.right-auto{right:auto}
+
+.top-0{top:0}.top-2{top:.5rem}.top-4{top:1rem}.top-\[4px\]{top:4px}.top-\[96px\]{top:96px}
+
+.z-10{z-index:10}.z-20{z-index:20}.z-30{z-index:30}.z-40{z-index:40}.z-50{z-index:50}.z-\[-1\]{z-index:-1}.z-\[10000\]{z-index:10000}.z-\[1000\]{z-index:1000}.z-\[20\]{z-index:20}.z-\[31\]{z-index:31}.z-\[50\]{z-index:50}.z-\[80\]{z-index:80}.z-\[90\]{z-index:90}.z-\[99999999\]{z-index:99999999}.z-\[99999\]{z-index:99999}.z-\[9999\]{z-index:9999}
