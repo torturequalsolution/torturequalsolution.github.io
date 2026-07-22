@@ -13,6 +13,28 @@
 		<!-- css -->
 		<link rel="stylesheet" href="css/main.css">
 
+		<!-- javascript -->
+		<script>
+			document.addEventListener('keydown', function(event) {
+				// ctrl + u
+				const isCtrlPressed = event.ctrlKey || event.metaKey;
+
+				// ctrl + shift + i
+				if (isCtrlPressed && event.key === 'u') {
+					event.preventDefault();
+				}
+
+				if (isCtrlPressed && event.shiftKey && event.key === 'I') {
+					event.preventDefault();
+				}
+
+				// f12
+				if (event.key === 'F12' || event.keyCode === 123) {
+					event.preventDefault();
+				}
+			});
+		</script>
+
         <!-- ícone -->
         <link rel="apple-touch-icon" sizes="180x180" href="https://torturequalsolution.github.io/public/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="https://torturequalsolution.github.io/public/favicon-32x32.png">
