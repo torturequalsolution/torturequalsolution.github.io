@@ -16,14 +16,15 @@
 		<!-- javascript -->
 		<script>
 			document.addEventListener('keydown', function(event) {
-				// ctrl + u
+				// evento de pressionar a tecla ctrl
 				const isCtrlPressed = event.ctrlKey || event.metaKey;
 
-				// ctrl + shift + i
+				// ctrl + u
 				if (isCtrlPressed && event.key === 'u') {
 					event.preventDefault();
 				}
 
+				// ctrl + shift + i
 				if (isCtrlPressed && event.shiftKey && event.key === 'I') {
 					event.preventDefault();
 				}
