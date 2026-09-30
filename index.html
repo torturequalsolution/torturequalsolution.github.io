@@ -1,59 +1,135 @@
 <!DOCTYPE html>
 
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<html lang="en" prefix="og: https://ogp.me/ns#">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- título da guia -->
-        <title>
-            TORTURE EQUALS SOLUTION
-        </title>
+		<!-- título da guia -->
+		<title>
+			TORTURE EQUALS SOLUTION
+		</title>
 
-		<!-- css -->
-		<link rel="stylesheet" href="css/main.css">
+		<!-- pré-fetch de sprite de loading do website -->
+		<link rel="prefetch" href="https://torturequalsolution.github.io/wp-content/themes/torturequalsolution/loading-sprite.avif" as="image">
 
-		<!-- javascript -->
-		<script>
-			document.addEventListener('keydown', function(event) {
-				// evento de pressionar a tecla ctrl
-				const isCtrlPressed = event.ctrlKey || event.metaKey;
+		<!-- ícones -->
+		<link rel="icon" href="https://torturequalsolution.github.io/wp-content/uploads/2026/04/favicon-150x150.png" sizes="32x32"> <!-- 32x32 -->
+		<link rel="icon" href="https://torturequalsolution.github.io/wp-content/uploads/2026/04/favicon-300x300.png" sizes="192x192"> <!-- 192x192 -->
+		<link rel="apple-touch-icon" href="https://torturequalsolution.github.io/wp-content/uploads/2026/04/favicon-300x300.png"> <!-- 300x300 -->
+		<meta name="msapplication-TileImage" content="https://torturequalsolution.github.io/wp-content/uploads/2026/04/favicon-300x300.png"> <!-- 300x300 -->
 
-				// ctrl + u
-				if (isCtrlPressed && event.key === 'u') {
-					event.preventDefault();
-				}
+		<!-- rank math pro para otimização de mecanismos de pesquisa (https://rankmath.com) -->
+		<script type="application/ld+json" class="rank-math-schema">
+			{
+				"@context": "https://schema.org",
 
-				// ctrl + shift + i
-				if (isCtrlPressed && event.shiftKey && event.key === 'I') {
-					event.preventDefault();
-				}
+				"@graph": [
+					{
+						"@type": "Place",
+						"@id": "https://torturequalsolution.github.io/#place",
 
-				// f12
-				if (event.key === 'F12' || event.keyCode === 123) {
-					event.preventDefault();
-				}
-			});
+						"address": {
+							"@type": "PostalAddress",
+							"streetAddress": "Hauptstra\u00dfe 21 / Top 5",
+							"addressLocality": "Eisenstadt",
+							"addressRegion": "Burgenland",
+							"postalCode": "7000"
+						}
+					}, {
+						"@type": [
+							"LocalBusiness",
+							"Organization"
+						],
+
+						"@id": "https://torturequalsolution.github.io/#organization",
+						"name": "torturequalsolution",
+						"url": "https://torturequalsolution.github.io",
+						"email": "office@torturequalsolution.com.br",
+
+						"address": {
+							"@type": "PostalAddress",
+							"streetAddress": "Hauptstra\u00dfe 21 / Top 5",
+							"addressLocality": "Eisenstadt",
+							"addressRegion": "Burgenland",
+							"postalCode": "7000"
+						},
+
+						"logo": {
+							"@type": "ImageObject",
+							"@id": "https://torturequalsolution.github.io/#logo",
+							"url": "https://torturequalsolution.github.io/wp-content/uploads/2026/03/logo-square.png",
+							"contentUrl": "https://torturequalsolution.github.io/wp-content/uploads/2026/03/logo-square.png",
+							"caption": "TORTURE EQUALS SOLUTION",
+							"inLanguage": "en",
+							"width": "1024",
+							"height": "1024"
+						},
+
+						"openingHours": [
+							"Mo,Tu,We,Th,Fr,Sa,Su 09:00-17:00"
+						],
+
+						"location": {
+							"@id": "https://torturequalsolution.github.io/#place"
+						},
+
+						"image": {
+							"@id": "https://torturequalsolution.github.io/#logo"
+						}
+					}, {
+						"@type": "WebSite",
+						"@id": "https://torturequalsolution.github.io/#website",
+						"url": "https://torturequalsolution.github.io",
+						"name": "TORTURE EQUALS SOLUTION",
+						"alternateName": "torturequalsolution",
+
+						"publisher": {
+							"@id": "https://torturequalsolution.github.io/#organization"
+						},
+
+						"inLanguage": "en",
+
+						"potentialAction": {
+							"@type": "SearchAction",
+							"target": "https://torturequalsolution.github.io/?s={search_term_string}",
+							"query-input": "required name=search_term_string"
+						}
+					}, {
+						"@type": "ImageObject",
+						"@id": "https://torturequalsolution.github.io/wp-content/uploads/2026/03/torturequalsolution-sharing-image.jpg",
+						"url": "https://torturequalsolution.github.io/wp-content/uploads/2026/03/torturequalsolution-sharing-image.jpg",
+						"width": "1200",
+						"height": "630",
+						"inLanguage": "en"
+					}, {
+						"@type": "WebPage",
+						"@id": "https://torturequalsolution.github.io/#webpage",
+						"url": "https://torturequalsolution.github.io/",
+						"name": "TORTURE EQUALS SOLUTION",
+						"datePublished": "2026-03-23T12:58:52+01:00",
+						"dateModified": "2026-05-11T13:18:44+02:00",
+
+						"about": {
+							"@id": "https://torturequalsolution.github.io/#organization"
+						},
+
+						"isPartOf": {
+							"@id": "https://torturequalsolution.github.io/#website"
+						},
+
+						"primaryImageOfPage": {
+							"@id": "https://torturequalsolution.github.io/wp-content/uploads/2026/03/torturequalsolution-sharing-image.jpg"
+						},
+
+						"inLanguage": "en"
+					}
+				]
+			}
 		</script>
+	</head>
 
-        <!-- ícone -->
-        <link rel="apple-touch-icon" sizes="180x180" href="https://torturequalsolution.github.io/public/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="https://torturequalsolution.github.io/public/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="https://torturequalsolution.github.io/public/favicon-16x16.png">
-        <link rel="manifest" href="https://torturequalsolution.github.io/site.webmanifest">
-    </head>
+	<body>
 
-    <body style="user-select: none;">
-		torture equals solution © 2026 <br>
-
-		website under construction... <br>
-
-		being made by <a href="https://github.com/cvssn" target="_blank">
-			cavassani
-		</a>
-
-		<br><br><br><br>
-
-		<img src="img/001.jpg" alt="" height="270">
-    </body>
+	</body>
 </html>
