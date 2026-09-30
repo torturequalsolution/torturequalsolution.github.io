@@ -1,14 +1,22 @@
+################
+# editorconfig #
+############################
+# https://editorconfig.org #
+############################
+
 # arquivo editorconfig de maior prioridade
 root = true
 
+# quebras de linha em estilo unix, com uma quebra de linha no final de cada arquivo
 [*]
 end_of_line = lf
-trim_trailing_whitespace = true
 insert_final_newline = true
 
+# definição de charset padrão
 [*.{js,html,css}]
-indent_size = 4
-indent_style = tab
+charset = utf-8
 
-[*.{md,markdown}]
-trim_trailing_whitespace = false
+# indentação de 2 espaços
+[*.{js,html,css}]
+indent_style = space
+indent_size = 2
