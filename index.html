@@ -121,6 +121,142 @@
 
     <!-- pré-loads internos de shop.app -->
     <script async="async" src="https://shop.app/checkouts/internal/preloads.js" crossorigin="anonymous"></script>
+
+    <script id="apple-pay-shop-capabilities" type="application/json">
+      {
+        "shopId": 2598515,
+        "countryCode": "GB",
+        "currencyCode": "BRL",
+
+        "merchantCapabilities": [
+          "supports3DS"
+        ],
+        
+        "merchantId": "gid:\/\/shopify\/Shop\/2598515",
+        "merchantName": "TORTURE EQUALS SOLUTION",
+        
+        "requiredBillingContactFields": [
+          "postalAddress",
+          "email",
+          "phone"
+        ],
+        
+        "requiredShippingContactFields": [
+          "postalAddress",
+          "email",
+          "phone"
+        ],
+        
+        "shippingType": "shipping",
+        
+        "supportedNetworks": [
+          "visa",
+          "maestro",
+          "masterCard",
+          "amex",
+          "discover",
+          "elo"
+        ],
+        
+        "total": {
+          "type": "pending",
+          "label": "TORTURE EQUALS SOLUTION",
+          "amount": "1.00"
+        },
+        
+        "shopifyPaymentsEnabled": true,
+        "supportsSubscriptions": true
+      }
+    </script>
+
+    <script id="shopify-features" type="application/json">
+      {
+        "accessToken": "d4ce30a5c2090c2d4091ce64e7f2fc35",
+        
+        "betas": [
+          "rich-media-storefront-analytics"
+        ],
+        
+        "domain": "torturequalsolution.github.io",
+        "predictiveSearch": true,
+        "shopId": 2598515,
+        "locale": "en"
+      }
+    </script>
+
+    <script>
+      var Shopify = Shopify || {};
+
+      Shopify.shop = "torture-equals-solution.myshopify.com";
+      Shopify.locale = "en";
+      Shopify.currency = {"active": "BRL", "rate": "7.0144686"};
+      Shopify.country = "BR";
+      Shopify.theme = {"name":"Drop-Dead\/store\/main","id":181309014394,"schema_name":"WIRO Agency CORE","schema_version":"1.0.0","theme_store_id":null,"role":"main"};
+      Shopify.theme.handle = "null";
+      Shopify.theme.style = {"id":null,"handle":null};
+      Shopify.cdnHost = "dropdead.world/cdn";
+      Shopify.routes = Shopify.routes || {};
+      Shopify.routes.root = "/";
+      Shopify.shopJsCdnBaseUrl = "https://cdn.shopify.com/shopifycloud/shop-js";
+      Shopify.SignInWithShop = Shopify.SignInWithShop || {};
+      Shopify.SignInWithShop.User = Shopify.SignInWithShop.User || {};
+      Shopify.SignInWithShop.User.recognized = false;
+    </script>
+    
+    <script type="module">
+      !function(o) {
+        (o.Shopify=o.Shopify||{}).modules =! 0
+      }(window);
+    </script>
+
+    <script>
+      !function(o) {
+        function n() {
+          var o = [];
+          
+          function n() {
+            o.push(Array.prototype.slice.apply(arguments))
+          }
+          
+          return n.q = o, n
+        }
+        
+        var t = o.Shopify = o.Shopify || {};
+        
+        t.loadFeatures = n(),
+        t.autoloadFeatures= n ()
+      }(window);
+    </script>
+
+    <script>
+      window.ShopifyPay = window.ShopifyPay || {};
+      window.ShopifyPay.apiHost = "shop.app\/pay";
+      window.ShopifyPay.redirectState = null;
+    </script>
+
+    <script>
+      window.Shopify = window.Shopify || {};
+      window.Shopify.SignInWithShop = window.Shopify.SignInWithShop || {};
+      window.Shopify.SignInWithShop.assetMetrics = { sampleRate: 0.25 };
+      window.Shopify.SignInWithShop.eligible = true;
+    </script>
+
+    <script id="shop-js-analytics" type="application/json">
+      {
+        "pageType": "index"
+      }
+    </script>
+
+    <script defer="defer" async type="module" src="https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/loader.init-shop-cart-sync.en.esm.js"></script>
+
+    <script type="module">
+      await import("https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/loader.init-shop-cart-sync.en.esm.js");
+
+      window.Shopify.SignInWithShop?.initShopCartSync?.({
+        "fedCMEnabled": true,
+        "windoidEnabled": true
+      });
+    </script>
   </head>
 
 	<body class="gradient tw-antialiased page--index">
